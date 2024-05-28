@@ -20,6 +20,8 @@
             if (!widgetContainer.contains(event.target)) {
                 const textContent = event.target.innerText || event.target.textContent;
                 outputContainer.textContent = textContent;
+                let ut = new SpeechSynthesisUtterance(textContent);
+                window.speechSynthesis.speak(ut)
             }
         }
     }, true); // Use captura para garantir que o evento seja capturado na fase de captura
