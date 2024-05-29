@@ -22,7 +22,7 @@
                 window.speechSynthesis.speak(ut)
             }
         }
-    }, true); // Use captura para garantir que o evento seja capturado na fase de captura
+    }, true); 
 
     widgetContainer.appendChild(startButton);
     widgetContainer.appendChild(outputContainer);
